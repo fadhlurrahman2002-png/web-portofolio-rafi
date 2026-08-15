@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+
+    <title>About | Portofolio Rafi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav>
+
+            <h2>Portofolio</h2>
+
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                
+                <li><a href="about.html" class="active"><i class="fa-solid fa-user"></i>About</a></li>
+                
+                <li><a href="skills.html"><i class="fa-solid fa-laptop-code"></i>Skills</a></li>
+                
+                <li><a href="project.html"><i class="fa-solid fa-folder-open"></i>Project</a></li>
+                
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+
+            </ul>
+
+            <button id="darkModeBtn" class="dark-mode-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero About -->
+
+    <section class="about-hero">
+        <img src="images/profile.png"
+        class="profile"
+        alt="Foto Profile">
+
+        <h1>Rafi Fadhlur Rahman</h1>
+
+        <h3>Fresh Graduate Teknik Informatika</h3>
+
+    </section>
+
+    <!-- Tentang Saya -->
+
+    <section>
+
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Saya merupakan lulusan Teknik Informatika yang memiliki
+            ketertarikan pada bidang Data Analytics, Database Management,
+            dan Web Development.
+
+            Saya senang mempelajari teknologi baru serta memiliki
+            kemampuan dalam mengolah data menjadi informasi yang
+            bermanfaat untuk mendukung pengambilan keputusan.
+
+        </p>
+
+    </section>
+
+    <!-- Pendidikan -->
+
+    <section>
+
+        <h2>Pendidikan</h2>
+
+        <div class="card">
+
+            <h3>Universitas Muhammadiyah Prof. Dr. Hamka</h3>
+
+            <p>
+
+                S1 Teknik Informatika
+
+            </p>
+
+            <p>
+
+                2020 - 2024
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Pengalaman -->
+
+    <section>
+
+        <h2>Pengalaman</h2>
+
+        <div class="card">
+
+            <h3>Magang</h3>
+
+            <p>
+
+                Badan Pengembangan Teknologi dan Informasi (BPTI) Uhamka
+
+            </p>
+
+            <p>
+
+                Merancang dan mengelola sistem basis data menggunakan phpMyAdmin. 
+                Menulis query Python untuk optimasi pengambilan data yang mendukung 
+                operasional sistem informasi kampus.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Organisasi</h3>
+
+            <p>
+
+                Karang Taruna RT
+
+            </p>
+
+            <p>
+
+                Bagian Seksi Keamanan
+                sebagai anggota saya menjalankan tugas yang sudah dutentukan
+                berjalan sesuai dengan yang sudah direncanakan
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Sertifikat -->
+
+    <section>
+
+        <h2>Sertifikat</h2>
+
+    <div class="certificate-container">
+
+        <!-- Data Analysis -->
+
+        <div class="certificate-card">
+
+            <img src="images/certificate-data-analysis.png"
+                 alt="Sertifikat Data Analysis"
+                 onclick="openCertificate(this.src)">
+
+            <h3>Data Analysis: Fullstack Intensive Bootcamp</h3>
+
+            <p>
+                MySkill Intensive Bootcamp - Batch 24
+            </p>
+
+        </div>
+
+
+        <!-- TOEFL -->
+
+        <div class="certificate-card">
+
+            <img src="images/certificate-toefl.png"
+                 alt="Sertifikat TOEFL"
+                 onclick="openCertificate(this.src)">
+
+            <h3>TOEFL</h3>
+
+            <p>
+                Sertifikat kemampuan Bahasa Inggris.
+            </p>
+
+        </div>
+
+
+        <!-- Microsoft Excel -->
+
+        <div class="certificate-card">
+
+            <img src="images/certificate-excel.png"
+                 alt="Microsoft Office Specialist Excel 2016"
+                 onclick="openCertificate(this.src)">
+
+            <h3>Microsoft Office Specialist: Excel 2016</h3>
+
+            <p>
+                Office Excel 2016
+            </p>
+
+        </div>
+
+    </div>
+
+
+    </section>
+
+    <!-- Download CV -->
+
+    <section>
+
+        <h2>Curriculum Vitae</h2>
+
+        <a href="cv.pdf" download>
+
+            <button>
+
+                <i class="fa-solid fa-download"></i>
+                
+                Download CV
+                
+            </button>
+
+        </a>
+
+    </section>
+
+    <!-- Back to Top -->
+
+<button id="backToTop" class="back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Rafi Fadhlur Rahman
+
+        </p>
+
+    </footer>
+
+    <!-- Certificate Modal -->
+
+<div id="certificateModal" class="certificate-modal">
+
+    <span class="close-certificate" onclick="closeCertificate()">
+        &times;
+    </span>
+
+    <img id="certificatePreview" class="certificate-preview">
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analisis Sentimen Alibaba.com | Portfolio Rafi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <h2>Portofolio</h2>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <i class="fa-solid fa-user"></i> About
+                </a>
+            </li>
+
+            <li>
+                <a href="skills.html">
+                    <i class="fa-solid fa-laptop-code"></i> Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="project.html" class="active">
+                    <i class="fa-solid fa-folder-open"></i> Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa-solid fa-envelope"></i> Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- PROJECT DETAIL -->
+
+<section class="project-detail">
+
+    <h1>Analisis Sentimen Ulasan Pengguna Aplikasi Alibaba.com</h1>
+
+    <p class="project-subtitle">
+        Menggunakan Metode Naïve Bayes pada Ulasan Google Play Store
+    </p>
+
+
+    <!-- Overview -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-circle-info"></i>
+            Project Overview
+        </h2>
+
+        <p>
+            Penelitian ini merupakan skripsi yang membahas analisis sentimen
+            ulasan pengguna aplikasi Alibaba.com pada Google Play Store
+            menggunakan metode Naïve Bayes.
+        </p>
+
+        <p>
+            Penelitian dilakukan untuk mengetahui sentimen pengguna terhadap
+            aplikasi Alibaba.com berdasarkan ulasan yang diberikan.
+        </p>
+
+    </div>
+
+    <!-- Research Flow -->
+
+<div class="project-detail-card">
+
+    <h2>
+        <i class="fa-solid fa-diagram-project"></i>
+        Alur Penelitian
+    </h2>
+
+    <img src="images/project-alibaba.png"
+         alt="Alur Penelitian Analisis Sentimen Alibaba.com"
+         class="research-flow-image">
+
+</div>
+
+    <!-- Project Information -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-list-check"></i>
+            Project Information
+        </h2>
+
+        <div class="project-info-grid">
+
+            <div>
+                <strong>Project Type</strong>
+                <span>Skripsi</span>
+            </div>
+
+            <div>
+                <strong>Category</strong>
+                <span>Data Analytics & Machine Learning</span>
+            </div>
+
+            <div>
+                <strong>Dataset</strong>
+                <span>Google Play Store</span>
+            </div>
+
+            <div>
+                <strong>Dataset Size</strong>
+                <span>998 Ulasan</span>
+            </div>
+
+            <div>
+                <strong>Method</strong>
+                <span>Naïve Bayes</span>
+            </div>
+
+            <div>
+                <strong>Tools</strong>
+                <span>RapidMiner & Python</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Methodology -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-gears"></i>
+            Metodologi
+        </h2>
+
+        <p>
+            Tahapan penelitian dilakukan melalui beberapa proses pengolahan
+            data sebelum dilakukan klasifikasi menggunakan metode Naïve Bayes.
+        </p>
+
+        <div class="method-list">
+
+            <div>
+                <span>01</span>
+                <strong>Pengumpulan Data</strong>
+                <p>
+                    Mengumpulkan ulasan pengguna aplikasi Alibaba.com
+                    dari Google Play Store.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <strong>Cleaning</strong>
+                <p>
+                    Membersihkan data dari karakter dan elemen yang
+                    tidak diperlukan.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <strong>Tokenizing</strong>
+                <p>
+                    Memecah teks ulasan menjadi token atau kata.
+                </p>
+            </div>
+
+            <div>
+                <span>04</span>
+                <strong>Case Folding</strong>
+                <p>
+                    Mengubah teks menjadi bentuk huruf kecil.
+                </p>
+            </div>
+
+            <div>
+                <span>05</span>
+                <strong>Filtering</strong>
+                <p>
+                    Menghilangkan stopword dan melakukan penyaringan
+                    token sesuai proses preprocessing.
+                </p>
+            </div>
+
+            <div>
+                <span>06</span>
+                <strong>TF-IDF</strong>
+                <p>
+                    Melakukan pembobotan kata menggunakan metode
+                    TF-IDF sebelum proses klasifikasi.
+                </p>
+            </div>
+
+            <div>
+                <span>07</span>
+                <strong>Naïve Bayes</strong>
+                <p>
+                    Melakukan klasifikasi sentimen menggunakan metode
+                    Naïve Bayes.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Dataset -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-database"></i>
+            Dataset
+        </h2>
+
+        <p>
+            Dataset penelitian terdiri dari 998 ulasan pengguna aplikasi
+            Alibaba.com yang diperoleh dari Google Play Store.
+        </p>
+
+        <div class="result-grid">
+
+            <div class="result-box">
+
+                <strong>998</strong>
+
+                <span>Total Ulasan</span>
+
+            </div>
+
+            <div class="result-box">
+
+                <strong>599</strong>
+
+                <span>Data Training</span>
+
+            </div>
+
+            <div class="result-box">
+
+                <strong>399</strong>
+
+                <span>Data Testing</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Result -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-chart-column"></i>
+            Hasil Penelitian
+        </h2>
+
+        <p>
+            Berdasarkan hasil pengujian menggunakan metode Naïve Bayes,
+            diperoleh hasil evaluasi sebagai berikut:
+        </p>
+
+        <div class="result-grid">
+
+            <div class="result-box">
+
+                <strong>77,44%</strong>
+
+                <span>Accuracy</span>
+
+            </div>
+
+            <div class="result-box">
+
+                <strong>83,39%</strong>
+
+                <span>Precision</span>
+
+            </div>
+
+            <div class="result-box">
+
+                <strong>85,16%</strong>
+
+                <span>Recall</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Sentiment -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-comments"></i>
+            Hasil Sentimen
+        </h2>
+
+        <div class="result-grid">
+
+            <div class="result-box positive">
+
+                <strong>721</strong>
+
+                <span>Sentimen Positif</span>
+
+            </div>
+
+            <div class="result-box negative">
+
+                <strong>277</strong>
+
+                <span>Sentimen Negatif</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Conclusion -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-check-circle"></i>
+            Kesimpulan
+        </h2>
+
+        <p>
+            Hasil penelitian menunjukkan bahwa metode Naïve Bayes dapat
+            digunakan untuk melakukan klasifikasi sentimen pada ulasan
+            pengguna aplikasi Alibaba.com.
+        </p>
+
+        <p>
+            Berdasarkan pengujian yang dilakukan, model memperoleh
+            accuracy sebesar 77,44%, precision sebesar 83,39%, dan
+            recall sebesar 85,16%.
+        </p>
+
+    </div>
+
+
+    <!-- Technology -->
+
+    <div class="project-detail-card">
+
+        <h2>
+            <i class="fa-solid fa-code"></i>
+            Technologies
+        </h2>
+
+        <div class="tech-stack">
+
+            <span>Python</span>
+
+            <span>RapidMiner</span>
+
+            <span>Naïve Bayes</span>
+
+            <span>TF-IDF</span>
+
+            <span>Text Preprocessing</span>
+
+            <span>Google Play Store</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Thesis -->
+
+    <div class="project-detail-card thesis-card">
+
+        <h2>
+            <i class="fa-solid fa-file-pdf"></i>
+            Skripsi Lengkap
+        </h2>
+
+        <p>
+            Untuk melihat penelitian secara lebih lengkap, kamu dapat
+            membuka dokumen skripsi berikut.
+        </p>
+
+        <a href="skripsi-alibaba.pdf" target="_blank">
+
+            <button>
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                Lihat Skripsi Lengkap
+
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Rafi Fadhlur Rahman
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
